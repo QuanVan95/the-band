@@ -1,0 +1,156 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}   
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#nav {
+    display:inline-block;
+}
+
+#main {
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .subnav li {
+    display: block;
+}
+
+#nav > li {
+    display: inline-block;
+} 
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #ffff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav  li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: #000;
+    background-color: #cccc;
+}
+
+#header {
+    background-color: #000;
+    position: fixed;
+    height: 46px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* put slider above header */
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/the-band/assets/img/slider/slider_1.jpg') top center / cover no-repeat;
+    
+}
+
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    width: 100%; /* same left:0; right:0; */
+    text-align: center;
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin: 25px 0;
+}
+
+#content {
+  min-height: 1000px;
+}
+
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    font-style: italic;
+    margin: 25px 0;
+    opacity: 0.6;
+    text-align: center;
+}
+
+#content .about-text {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#footer {
+
+}
