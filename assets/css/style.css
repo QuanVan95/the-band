@@ -27,6 +27,42 @@ html {
     margin-right: -8px;
 }
 
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
 #main {
     
 }
@@ -175,12 +211,6 @@ html {
     font-size: 15px;
 }
 
-#content .member-item {
-    float: left;
-    width: calc(100% / 3);
-    text-align: center;
-}
-
 #content .member-img {
     margin-top: 15px;
     width: 154px;
@@ -223,13 +253,8 @@ html {
 }
 
 .place-list {
-    margin: 32px -8px 0;
-}
-
-.place-item {
-    float: left;
-    width: 33.3333%;
-    padding: 0 8px;;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 .place-img {
@@ -276,6 +301,39 @@ html {
     background-color: #ccc;
 }
 
+/* Contact form */
+
+.contact-content {
+
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    display: inline-block;
+    width: 38px;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+}
 
 #footer {
 
